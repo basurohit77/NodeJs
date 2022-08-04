@@ -1,0 +1,26 @@
+node inspect badLoop.js
+debug> help
+debug> watch('totalOrders')
+debug> unwatch('totalOrders')
+
+c or cont: Continue execution
+n or next: Move to the next line of code.
+s or step: Step into a function. 
+o : Step out of a function. 
+r : run
+
+>debug .exit
+
+Adding break points:
+add below line in source code
+
+debugger;
+
+Chrome
+
+node --inspect badLoop.js
+
+
+browser --> chrome://inspect
+Open dedicated DevTools for Node
+-->source tab

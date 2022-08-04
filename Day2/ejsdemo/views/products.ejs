@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <%- include('menu') %>
+        <h2>Products</h2>
+        <div>
+            <h4>
+                <ul>
+                    <% products.forEach(e=> { %>
+                        <li>
+                            <%= e.code %>,<%= e.name %>,<%= e.price %>
+                                        <% }); %>
+                        </li>
+                </ul>
+            </h4>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+C:\...>\mongod.exe -- dbpath d:\test\mongodb\data  
+
+C:\..> mongo (run shell)
+
+
+>db(current database)
+>show dbs  (list databases)
+>use moviedb
+>db.movie.insert({name:'Independence Day',stars:'5'})
+>db.movie.find()
+>db.movie.find().limit(4);
+>db.movie.find({stars:'3'});
+>db.dropDatabase()  
+
+
+>use moviedb
+>show collections  
+>db.movies.drop()
+
+
+>db.products.insert({ item: "card", qty: 15 } )
+>db.products.find()  
+
+db.products.insert( [ 
+{ _id: 11, item: "pencil", qty: 50, type: "no.2" }, 
+{ item: "pen", qty: 20 }, { item: "eraser", qty: 25 } 
+] )
+
+>db.mycol.find()
+>db.mycol.find().pretty()
+>db.mycol.find({},{"title":1,_id:0})
+
+
+db.mycol.update({'title':'MongoDB Overview'},{$set:{'title':'New MongoDB Tutorial'}})
+
+>db.mycol.update({'title':'MongoDB Overview'}, {$set:{'title':'New MongoDB Tutorial'}},{multi:true})
+
+
+>db.mycol.remove({'title':'MongoDB Overview'})
