@@ -10,7 +10,7 @@ app.set('views', 'views');
 
 app.use(express.static(path.join(__dirname, "/assets")));
 app.use(express.urlencoded({ extended: true }));
-app.listen(3000, () => {
+app.listen(8001, () => {
     console.log('server is up(3000)')
 });
 
@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 
 app.get("/products", productsController);
 app.get("/signin", (req, res) => {
-    res.render('signin', { err: '' })
+    res.render('signin', { err: '' }) 
 
 });
 app.post("/checklogin", loginController);

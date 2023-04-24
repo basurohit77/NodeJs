@@ -1,3 +1,5 @@
+const users = require('../user');
+
 function loginController(req, res) {
     if (users.find((u) => (req.body.login == u.login && req.body.password == u.password)))
         res.render('home', { user: req.body.login });
@@ -6,4 +8,4 @@ function loginController(req, res) {
 
 }
 
-module.exports = loginController;
+module.exports = loginController; 

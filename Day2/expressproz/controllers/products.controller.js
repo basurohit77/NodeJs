@@ -8,4 +8,4 @@ function productsController(req, res) {
     });
 }
 
-module.exports = productsController;
+module.exports = productsController; 
