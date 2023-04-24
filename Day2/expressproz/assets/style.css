@@ -1,0 +1,14 @@
+* {
+  margin: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+}
+
+table,
+tr,
+td,
+th {
+  width: 600px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
